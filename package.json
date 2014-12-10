@@ -1,0 +1,32 @@
+{
+	"name": "gulp-empty",
+	"version": "0.1.0",
+	"description": "Gulp task that does not do something",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/trenker/gulp-empty.git"
+	},
+	"main": "./index.js",
+	"author": {
+		"name": "Georg Grossberger",
+		"email": "contact@grossberger-ge.org",
+		"url": "http://grossberger-ge.org"
+	},
+	"license": "MIT",
+	"bugs": {
+		"url": "https://github.com/trenker/gulp-empty/issues",
+		"email": "contact@grossberger-ge.org"
+	},
+	"keywords": [
+		"gulp",
+		"plugin",
+		"gulp plugin",
+		"empty",
+		"noop",
+		"function",
+		"no function"
+	],
+	"dependencies": {
+		"through": "^2.3.4"
+	}
+}
