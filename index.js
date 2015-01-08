@@ -15,7 +15,12 @@ module.exports = function() {
 	return through(function(file) {
 		files.push(file);
 	}, function() {
-		this.push.apply(this, files);
+		var me = this;
+
+		files.forEach(function(file) {
+			me.push(file);
+		});
+
 		this.emit("end");
 	});
 };
