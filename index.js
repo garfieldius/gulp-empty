@@ -8,19 +8,11 @@
 
 "use strict";
 
-module.exports = function() {
-	var through = require("through"),
-		files = [];
+module.exports = empty;
 
-	return through(function(file) {
-		files.push(file);
-	}, function() {
-		var me = this;
-
-		files.forEach(function(file) {
-			me.push(file);
-		});
-
-		this.emit("end");
-	});
-};
+function empty () {
+	var through = require("through2");
+	return through.obj(function (file, enc, cb) {
+        cb(null, file);
+    });
+}
