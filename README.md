@@ -2,6 +2,11 @@
 
 A drop - in replacement for any gulp task that you want to disable
 
+> **DEPRECATED**: This package is not actively maintained, it will not go away, 
+> but there will be no compatibility fixes. Please use one of the following instead:
+> * [gulp.util.noop](https://github.com/gulpjs/gulp-util#noop)
+> * [gulp-if](https://www.npmjs.com/package/gulp-if)
+
 ## Installation
 
 Use npm
